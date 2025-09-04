@@ -1,0 +1,33 @@
+// Back-end complete function Template for Java
+import java.util.*;
+
+public class Solution {
+    public void calculate(int a, int b, int operator) {
+        switch (operator) {
+            case 1:
+                System.out.print(a + b);
+                break;
+            case 2:
+                System.out.print(a - b);
+                break;
+            case 3:
+                System.out.print(a * b);
+                break;
+            default:
+                System.out.print("Invalid Input");
+        }
+    }
+
+    // For local testing
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int operator = sc.nextInt();
+
+        Solution obj = new Solution();
+        obj.calculate(a, b, operator);
+
+        sc.close();
+    }
+}
